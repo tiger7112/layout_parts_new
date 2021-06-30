@@ -2,4 +2,112 @@
 
 /* 回答はここに書いてね */
 
+/* ー Q7-1 floatでの横並び ー */
+
+.box {
+    font-size: 16px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.floatbox {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.float {
+    float: left;
+    width: 205px;
+    margin-left: 45px;
+}
+
+.float:first-child {
+    margin-left: 0;
+}
+
+/* ー Q7-2 tableでの横並び ー */
+
+.table1 {
+    display: table;
+    width: 500px;   
+}
+
+.table2 {
+    display: table-cell;
+    width: 225px;
+    vertical-align: middle;
+    padding-left: 50px;
+}
+
+.table2:first-child {
+    padding-left: 0;
+}
+
+/* ー Q7-3 inline-blockでの横並び ー */
+
+.inlinebox {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.inline1 {
+    display: inline-block;
+    width: 205px;
+    margin-left: 45px;
+    vertical-align: middle;
+}
+
+.inline1:first-child {
+    margin-left: 0;
+}
+
+/* ー Q7-4 flexでの横並び ー */
+
+.flexbox {
+    width: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.flex1 {
+    width: 205px;
+    margin: 0 auto;
+}
+
+/* ー Q7-5 inline-blockとmarginでの横並び ー */
+
+.margin {
+    /* white-space: nowrap; */
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+.margin1 {
+    font-size: 16px;
+    display: inline-block;
+    width: 300px;
+    /* white-space: normal; */
+    vertical-align: top;
+}
+
+.margin2 {
+    font-size: 16px;
+    display: inline-block;
+    /* white-space: normal; */
+    width: 100%;
+    margin-left: -300px;
+    padding-left: 350px;
+    /* position: relative; */
+    /* padding-left: 43px; */
+    /* min-width: 0; */
+    box-sizing: border-box;
+}
+
+
 /* 回答はここに書いてね */
